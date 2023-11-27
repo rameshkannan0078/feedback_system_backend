@@ -3,7 +3,9 @@
 
 ## Description
 
-Provide a brief description of your project here.
+I created nodejs application where it will uses the mongodb as backend.
+The user can able to create a user,admin,feedback and all other CRUD operations.
+After running server, '/version' to check the version.
 
 ## API Documentation
 
