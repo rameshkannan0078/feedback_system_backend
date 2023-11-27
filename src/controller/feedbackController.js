@@ -141,8 +141,8 @@ const deleteSingleFeedback = async (req, res, next) => {
 };
 
 const generateDashboardData = async (req, res, next) => {
-  try {
- 
+  try { 
+    
     const feedbackData = await Feedback.find();
     const overallCount = feedbackData.length;
     const uniqueCustomerIds = new Set(feedbackData.map((feedback) => feedback.customerId));
