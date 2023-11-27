@@ -7,6 +7,9 @@ I created nodejs application where it will uses the mongodb as backend.
 The user can able to create a user,admin,feedback and all other CRUD operations.
 After running server, '/version' to check the version.
 
+1.) Admin page can be accessed by - /admin in frontend
+2.) We can create Admin only by POSTMAN [Postman Documentation](https://documenter.getpostman.com/view/19413733/2s9YeEbBfq#a18bd4de-4182-4043-8baf-1f314e5bf725) for this
+
 ## API Documentation
 
 Visit [Postman Documentation](https://documenter.getpostman.com/view/19413733/2s9YeEbBfq#a18bd4de-4182-4043-8baf-1f314e5bf725) for detailed API documentation.
