@@ -26,7 +26,7 @@ Make sure you have the following installed:
 
 2. Navigate to the project directory:
    ```bash
-   cd your-project
+   cd feedback_system_backend
    ```
 
 3. Install the packages:
