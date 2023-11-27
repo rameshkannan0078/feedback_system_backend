@@ -21,7 +21,7 @@ Make sure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-project.git
+   git clone [https://github.com/your-username/your-project.git](https://github.com/rameshkannan0078/feedback_system_backend.git)
    ```
 
 2. Navigate to the project directory:
@@ -38,7 +38,7 @@ Make sure you have the following installed:
    ```bash
    nodemon index.js
    ```
-   The server will be running at [http://localhost:3000](http://localhost:3000) by default.
+   The server will be running at [http://localhost:7000](http://localhost:7000) by default.
 
 ## Contributing
 
