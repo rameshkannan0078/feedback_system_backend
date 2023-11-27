@@ -1,20 +1,19 @@
-#  Dockerfile for Node Express Backend
+FROM node:18.12.0-alpine
 
-FROM node:10.16-alpine
+# Install build dependencies
+RUN apk --no-cache add --virtual .build-deps build-base python3
 
-# Create App Directory
-RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-# Install Dependencies
 COPY package*.json ./
 
-RUN npm install --silent
+# Install dependencies and rebuild bcrypt
+RUN npm install --silent --production \
+    && npm rebuild bcrypt --build-from-source \
+    && npm cache clean --force
 
-# Copy app source code
 COPY . .
 
-# Exports
 EXPOSE 7000
 
-CMD ["nodemon","index.js"]
+CMD ["npm", "start"]

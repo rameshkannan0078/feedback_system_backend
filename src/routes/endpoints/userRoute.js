@@ -4,5 +4,5 @@ const userController = require('../../controller/userController');
 
 
 router.get('/', userController.getAllUsers);
-
+router.delete('/:id',userController.deleteSingleUser);
 module.exports = router;
